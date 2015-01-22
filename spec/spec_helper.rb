@@ -9,7 +9,7 @@ DB = PG.connect({:dbname => "budget_test"})
 
 RSpec.configure do |config|
   config.after(:each) do
-    DB.exec("DELETE FROM purchases *;")
+    DB.exec("DELETE FROM purchase *;")
     DB.exec("DELETE FROM company *;")
     DB.exec("DELETE FROM category *;")
     DB.exec("DELETE FROM purchase_company *;")
