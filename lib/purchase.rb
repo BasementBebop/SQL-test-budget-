@@ -31,5 +31,4 @@ class Purchase
   end
 
 
-
 end
